@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function page() {
+function Page() {
   return (
     <div className="container">
       <nav>
@@ -31,4 +31,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
