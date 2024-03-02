@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { loginSchema } from "@/app/schemas/loginSchema";
+import { loginSchema } from "../../schemas/loginSchema";
 import { loginSchemaType } from "@/app/@types/loginSchemaType";
 import Link from "next/link";
 
@@ -51,7 +51,6 @@ const Page = () => {
         <input className="mt-4" type="submit" value="Submit" />
       </form>
 
-      {/* Adicione um link para o registro */}
       <p>
         Don&apos;t have an account?{" "}
         <Link href="/accounts/register">Register</Link>
