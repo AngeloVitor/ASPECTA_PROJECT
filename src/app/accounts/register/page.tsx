@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { registerSchema } from "../../schemas/registerSchema";
 import { registerSchemaType } from "@app/types/registerSchema";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
   const {
@@ -15,9 +16,23 @@ const Page = () => {
   } = useForm<registerSchemaType>({
     resolver: zodResolver(registerSchema),
   });
+  const router = useRouter();
 
-  const onSubmit = (data: registerSchemaType) => {
-    console.log(data);
+  const onSubmit = async (data: registerSchemaType) => {
+    const res = await fetch("/api/accounts/register", {
+      method: "POST",
+      body: JSON.stringify({
+        username: data.username,
+        email: data.email,
+        password: data.password,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (res.ok) {
+      router.push("/accounts/login");
+    }
   };
 
   return (

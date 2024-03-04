@@ -5,6 +5,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema } from "../../schemas/loginSchema";
 import { loginSchemaType } from "@app/types/loginSchemaType";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const Page = () => {
   const {
@@ -14,14 +17,26 @@ const Page = () => {
   } = useForm<loginSchemaType>({
     resolver: zodResolver(loginSchema),
   });
+  const router = useRouter();
+  const [error, setError] = useState("");
 
-  const onSubmit = (data: loginSchemaType) => {
-    console.log(data);
+  const onSubmit = async (data: loginSchemaType) => {
+    const res = await signIn("credentials", {
+      email: data.email,
+      password: data.password,
+      redirect: false,
+    });
+    if (res?.error) {
+      setError(res.error);
+    } else {
+      router.push("/");
+    }
   };
 
   return (
     <div className="container mt-4">
       <h1 className="m-4">Login</h1>
+      {error && <article style={{ color: "#D93526" }}>{error}</article>}
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           type="email"
