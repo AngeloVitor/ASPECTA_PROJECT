@@ -4,7 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { registerSchema } from "../../schemas/registerSchema";
-import { registerSchemaType } from "@/app/@types/registerSchema";
+import { registerSchemaType } from "@app/types/registerSchema";
 import Link from "next/link";
 
 const Page = () => {

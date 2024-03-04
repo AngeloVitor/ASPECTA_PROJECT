@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema } from "../../schemas/loginSchema";
-import { loginSchemaType } from "@/app/@types/loginSchemaType";
+import { loginSchemaType } from "@app/types/loginSchemaType";
 import Link from "next/link";
 
 const Page = () => {
