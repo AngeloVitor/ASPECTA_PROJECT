@@ -1,5 +1,5 @@
-import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const RegisterPage = () => {
   return (
@@ -22,11 +22,11 @@ export const RegisterPage = () => {
         </Form.Group>
 
         <Button className="mt-4" size="lg" variant="primary" type="submit">
-          Register
+          Cadastrar
         </Button>
       </Form>
       <p className="mt-4">
-        Don't have an account? <Link to="register/">Register</Link>
+        Você ja tem registro? <Link to="/accounts/login/">Login</Link>
       </p>
     </div>
   );
