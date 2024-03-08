@@ -1,0 +1,9 @@
+.img{
+  display: block;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.link {
+  text-decoration: none;
+}

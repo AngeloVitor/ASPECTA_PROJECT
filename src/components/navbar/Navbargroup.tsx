@@ -1,7 +1,7 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 export function Navbargroup() {
   return (
@@ -10,23 +10,39 @@ export function Navbargroup() {
         <Container>
           <Nav className="m-auto">
             <Nav.Link>
-              <Link className="link-underline-dark link-light" to={"home/"}>
+              <Link className="link-underline-dark link-light" to={'home/'}>
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link-underline-dark link-light" to={"about/"}>
+              <Link className="link-underline-dark link-light" to={'about/'}>
                 Sobre
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link-underline-dark link-light" to={"price/"}>
+              <Link className="link-underline-dark link-light" to={'price/'}>
                 Preço
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link-underline-dark link-light" to={"contact/"}>
+              <Link className="link-underline-dark link-light" to={'contact/'}>
                 Contato
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="link-underline-dark link-light"
+                to={'accounts/register/'}
+              >
+                Registrar-se
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="link-underline-dark link-light"
+                to={'accounts/login/'}
+              >
+                Login
               </Link>
             </Nav.Link>
           </Nav>

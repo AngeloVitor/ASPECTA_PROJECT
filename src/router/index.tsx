@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import { App } from "../App";
-import { HomePage } from "../pages/HomePage";
-import { AboutPage } from "../pages/AboutPage";
-import { ContactPage } from "../pages/ContactPage";
-import { LoginPage } from "../pages/LoginPage";
-import { PricePage } from "../pages/PricePage";
-import { RegisterPage } from "../pages/RegisterPage";
+import { HomePage } from "../pages/home/HomePage";
+import { AboutPage } from "../pages/about/AboutPage";
+import { ContactPage } from "../pages/contact/ContactPage";
+import { LoginPage } from "../pages/login/LoginPage";
+import { PricePage } from "../pages/price/PricePage";
+import { RegisterPage } from "../pages/register/RegisterPage";
 
 export const router = createBrowserRouter([
   {
