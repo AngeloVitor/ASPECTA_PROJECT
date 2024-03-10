@@ -32,11 +32,6 @@ export const router = createBrowserRouter([
         path: "price/",
         element: <PricePage />,
       },
-    ],
-  },
-  {
-    path: "accounts/",
-    children: [
       {
         path: "login/",
         element: <LoginPage />,

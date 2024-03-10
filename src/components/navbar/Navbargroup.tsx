@@ -32,7 +32,7 @@ export function Navbargroup() {
             <Nav.Link>
               <Link
                 className="link-underline-dark link-light"
-                to={'accounts/register/'}
+                to={'register/'}
               >
                 Registrar-se
               </Link>
@@ -40,7 +40,7 @@ export function Navbargroup() {
             <Nav.Link>
               <Link
                 className="link-underline-dark link-light"
-                to={'accounts/login/'}
+                to={'login/'}
               >
                 Login
               </Link>

@@ -26,7 +26,7 @@ export const RegisterPage = () => {
         </Button>
       </Form>
       <p className="mt-4">
-        Você ja tem Cadastro? <Link to="/accounts/login/">Clique aqui</Link>
+        Você ja tem Cadastro? <Link to="/login/">Clique aqui</Link>
       </p>
     </div>
   );
