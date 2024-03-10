@@ -1,9 +1,30 @@
 .img{
   display: block;
-  max-width: 64px;
-  max-height: 64px;
+  max-width: 32px;
+  max-height: 32px;
 }
 
 .link {
   text-decoration: none;
+}
+
+.input{
+  border: none !important;
+  border-bottom: 2px solid #7452FF !important;
+  border-radius: 0px !important;
+  width: 50% !important;
+}
+
+.input:focus {
+box-shadow: none !important;
+}
+
+.button {
+  background-color: #7452FF !important;
+  border-color: #7452FF !important;
+}
+
+.linkRegister{
+  text-decoration: none;
+  color: black;
 }

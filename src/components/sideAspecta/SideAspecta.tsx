@@ -8,7 +8,6 @@ export const SideAspecta = () => {
   <div className={styles.container + ' col-4'}>
     <img src={AspectaIconWhite} alt="" />
     <p>A plataforma para você aprender com os melhores tutores, para um melhor aprendizado.</p>
-    <Link to="/register/">Criar conta</Link>
-    </div>
-    );
+  </div>
+  );
 };

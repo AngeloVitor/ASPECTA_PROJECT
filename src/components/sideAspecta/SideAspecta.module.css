@@ -2,3 +2,18 @@
   background-color: #7452FF;
   height: 100vh;
 }
+
+p{
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 900;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
